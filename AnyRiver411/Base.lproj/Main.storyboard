@@ -48,32 +48,5 @@
             </objects>
             <point key="canvasLocation" x="-2491" y="303"/>
         </scene>
-        <!--Root View Controller-->
-        <scene sceneID="dwj-LE-bw0">
-            <objects>
-                <tableViewController id="O7m-Jp-yxY" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="y4V-6Q-ZW5">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <prototypes>
-                            <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="ca1-xN-xcD">
-                                <autoresizingMask key="autoresizingMask"/>
-                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="ca1-xN-xcD" id="buw-1J-IvB">
-                                    <autoresizingMask key="autoresizingMask"/>
-                                </tableViewCellContentView>
-                            </tableViewCell>
-                        </prototypes>
-                        <connections>
-                            <outlet property="dataSource" destination="O7m-Jp-yxY" id="vUK-Kr-6ga"/>
-                            <outlet property="delegate" destination="O7m-Jp-yxY" id="tUy-d7-lE2"/>
-                        </connections>
-                    </tableView>
-                    <navigationItem key="navigationItem" title="Root View Controller" id="5MA-7k-C0c"/>
-                </tableViewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="laA-WQ-zuQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="320" y="334"/>
-        </scene>
     </scenes>
 </document>

@@ -23,6 +23,8 @@
 		C9FACA771A25263B00E3089D /* Hole_icon3.png in Resources */ = {isa = PBXBuildFile; fileRef = C9FACA761A25263B00E3089D /* Hole_icon3.png */; };
 		C9FACA791A25264700E3089D /* LocationsImage.png in Resources */ = {isa = PBXBuildFile; fileRef = C9FACA781A25264700E3089D /* LocationsImage.png */; };
 		C9FACA7B1A25265100E3089D /* Icon_info.png in Resources */ = {isa = PBXBuildFile; fileRef = C9FACA7A1A25265100E3089D /* Icon_info.png */; };
+		C9FACA7D1A252D4A00E3089D /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C9FACA7C1A252D4A00E3089D /* SystemConfiguration.framework */; };
+		C9FACA801A252EA300E3089D /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = C9FACA7F1A252EA300E3089D /* Reachability.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -63,6 +65,9 @@
 		C9FACA761A25263B00E3089D /* Hole_icon3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Hole_icon3.png; sourceTree = "<group>"; };
 		C9FACA781A25264700E3089D /* LocationsImage.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = LocationsImage.png; sourceTree = "<group>"; };
 		C9FACA7A1A25265100E3089D /* Icon_info.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Icon_info.png; sourceTree = "<group>"; };
+		C9FACA7C1A252D4A00E3089D /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		C9FACA7E1A252E9A00E3089D /* Reachability.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Reachability.h; sourceTree = "<group>"; };
+		C9FACA7F1A252EA300E3089D /* Reachability.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Reachability.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -70,6 +75,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C9FACA7D1A252D4A00E3089D /* SystemConfiguration.framework in Frameworks */,
 				C37FF40A22DE76D599093A3F /* libPods-AnyRiver411.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -87,6 +93,7 @@
 		932C2C59A8D153A1D0EBF502 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				C9FACA7C1A252D4A00E3089D /* SystemConfiguration.framework */,
 				A20CFF3491AD8BEF03527D47 /* libPods-AnyRiver411.a */,
 			);
 			name = Frameworks;
@@ -137,6 +144,8 @@
 		C9FACA401A251C0C00E3089D /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				C9FACA7E1A252E9A00E3089D /* Reachability.h */,
+				C9FACA7F1A252EA300E3089D /* Reachability.m */,
 				C9FACA731A25260300E3089D /* images */,
 				C9FACA411A251C0C00E3089D /* Info.plist */,
 				C9FACA421A251C0C00E3089D /* main.m */,
@@ -322,6 +331,7 @@
 			files = (
 				C9FACA6E1A25257000E3089D /* Bug.m in Sources */,
 				C9FACA711A25257000E3089D /* Location.m in Sources */,
+				C9FACA801A252EA300E3089D /* Reachability.m in Sources */,
 				C9FACA6B1A25257000E3089D /* Area.m in Sources */,
 				C9FACA491A251C0C00E3089D /* AnyRiver411.xcdatamodeld in Sources */,
 				C9FACA461A251C0C00E3089D /* AppDelegate.m in Sources */,
