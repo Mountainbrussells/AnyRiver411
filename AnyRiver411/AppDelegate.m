@@ -26,7 +26,7 @@
 
 @implementation AppDelegate
 
-#define aWaterURL [NSURL URLWithString:@"http://www.anglers411.com/river?waterId=2"]
+#define aWaterURL [NSURL URLWithString:@"http://www.anglers411.com/river?waterId=1"]
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {

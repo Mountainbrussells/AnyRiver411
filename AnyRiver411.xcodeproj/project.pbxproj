@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		C37FF40A22DE76D599093A3F /* libPods-AnyRiver411.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A20CFF3491AD8BEF03527D47 /* libPods-AnyRiver411.a */; };
+		C9CFC9CF1A2FCA2D0027231D /* BRCustomCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C9CFC9CE1A2FCA2D0027231D /* BRCustomCell.m */; };
 		C9FACA431A251C0C00E3089D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C9FACA421A251C0C00E3089D /* main.m */; };
 		C9FACA461A251C0C00E3089D /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C9FACA451A251C0C00E3089D /* AppDelegate.m */; };
 		C9FACA491A251C0C00E3089D /* AnyRiver411.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = C9FACA471A251C0C00E3089D /* AnyRiver411.xcdatamodeld */; };
@@ -41,6 +42,8 @@
 		2C7A41D7E3D60E6FD328F6DF /* Pods-AnyRiver411.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AnyRiver411.debug.xcconfig"; path = "Pods/Target Support Files/Pods-AnyRiver411/Pods-AnyRiver411.debug.xcconfig"; sourceTree = "<group>"; };
 		A20CFF3491AD8BEF03527D47 /* libPods-AnyRiver411.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-AnyRiver411.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C8D5E4E40D7B212E252BAA48 /* Pods-AnyRiver411.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AnyRiver411.release.xcconfig"; path = "Pods/Target Support Files/Pods-AnyRiver411/Pods-AnyRiver411.release.xcconfig"; sourceTree = "<group>"; };
+		C9CFC9CD1A2FCA2D0027231D /* BRCustomCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BRCustomCell.h; sourceTree = "<group>"; };
+		C9CFC9CE1A2FCA2D0027231D /* BRCustomCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BRCustomCell.m; sourceTree = "<group>"; };
 		C9FACA3D1A251C0C00E3089D /* AnyRiver411.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AnyRiver411.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C9FACA411A251C0C00E3089D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C9FACA421A251C0C00E3089D /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -99,6 +102,31 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		C9CFC9B91A2FC3C30027231D /* Core Data Models */ = {
+			isa = PBXGroup;
+			children = (
+				C9FACA471A251C0C00E3089D /* AnyRiver411.xcdatamodeld */,
+				C9FACA6F1A25257000E3089D /* Location.h */,
+				C9FACA701A25257000E3089D /* Location.m */,
+				C9FACA6C1A25257000E3089D /* Bug.h */,
+				C9FACA6D1A25257000E3089D /* Bug.m */,
+				C9FACA691A25257000E3089D /* Area.h */,
+				C9FACA6A1A25257000E3089D /* Area.m */,
+			);
+			name = "Core Data Models";
+			sourceTree = "<group>";
+		};
+		C9CFC9BA1A2FC3FE0027231D /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				C9FACA4A1A251C0C00E3089D /* ViewController.h */,
+				C9FACA4B1A251C0C00E3089D /* ViewController.m */,
+				C9CFC9CD1A2FCA2D0027231D /* BRCustomCell.h */,
+				C9CFC9CE1A2FCA2D0027231D /* BRCustomCell.m */,
+			);
+			name = "View Controllers";
+			sourceTree = "<group>";
+		};
 		C9FACA341A251C0C00E3089D = {
 			isa = PBXGroup;
 			children = (
@@ -122,20 +150,13 @@
 		C9FACA3F1A251C0C00E3089D /* AnyRiver411 */ = {
 			isa = PBXGroup;
 			children = (
+				C9FACA4D1A251C0C00E3089D /* Main.storyboard */,
 				C9FACA441A251C0C00E3089D /* AppDelegate.h */,
 				C9FACA451A251C0C00E3089D /* AppDelegate.m */,
-				C9FACA4A1A251C0C00E3089D /* ViewController.h */,
-				C9FACA4B1A251C0C00E3089D /* ViewController.m */,
-				C9FACA6F1A25257000E3089D /* Location.h */,
-				C9FACA701A25257000E3089D /* Location.m */,
-				C9FACA6C1A25257000E3089D /* Bug.h */,
-				C9FACA6D1A25257000E3089D /* Bug.m */,
-				C9FACA691A25257000E3089D /* Area.h */,
-				C9FACA6A1A25257000E3089D /* Area.m */,
-				C9FACA4D1A251C0C00E3089D /* Main.storyboard */,
+				C9CFC9BA1A2FC3FE0027231D /* View Controllers */,
+				C9CFC9B91A2FC3C30027231D /* Core Data Models */,
 				C9FACA501A251C0C00E3089D /* Images.xcassets */,
 				C9FACA521A251C0C00E3089D /* LaunchScreen.xib */,
-				C9FACA471A251C0C00E3089D /* AnyRiver411.xcdatamodeld */,
 				C9FACA401A251C0C00E3089D /* Supporting Files */,
 			);
 			path = AnyRiver411;
@@ -334,6 +355,7 @@
 				C9FACA801A252EA300E3089D /* Reachability.m in Sources */,
 				C9FACA6B1A25257000E3089D /* Area.m in Sources */,
 				C9FACA491A251C0C00E3089D /* AnyRiver411.xcdatamodeld in Sources */,
+				C9CFC9CF1A2FCA2D0027231D /* BRCustomCell.m in Sources */,
 				C9FACA461A251C0C00E3089D /* AppDelegate.m in Sources */,
 				C9FACA4C1A251C0C00E3089D /* ViewController.m in Sources */,
 				C9FACA431A251C0C00E3089D /* main.m in Sources */,
