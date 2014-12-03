@@ -25,8 +25,6 @@
 		C9FACA7B1A25265100E3089D /* Icon_info.png in Resources */ = {isa = PBXBuildFile; fileRef = C9FACA7A1A25265100E3089D /* Icon_info.png */; };
 		C9FACA7D1A252D4A00E3089D /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C9FACA7C1A252D4A00E3089D /* SystemConfiguration.framework */; };
 		C9FACA801A252EA300E3089D /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = C9FACA7F1A252EA300E3089D /* Reachability.m */; };
-		C9FACA831A2547F000E3089D /* AGMAreasCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C9FACA821A2547F000E3089D /* AGMAreasCell.m */; };
-		C9FACA851A2547F700E3089D /* AGMAreasCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C9FACA841A2547F700E3089D /* AGMAreasCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -70,9 +68,6 @@
 		C9FACA7C1A252D4A00E3089D /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		C9FACA7E1A252E9A00E3089D /* Reachability.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Reachability.h; sourceTree = "<group>"; };
 		C9FACA7F1A252EA300E3089D /* Reachability.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Reachability.m; sourceTree = "<group>"; };
-		C9FACA811A2547DD00E3089D /* AGMAreasCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AGMAreasCell.h; sourceTree = "<group>"; };
-		C9FACA821A2547F000E3089D /* AGMAreasCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AGMAreasCell.m; sourceTree = "<group>"; };
-		C9FACA841A2547F700E3089D /* AGMAreasCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AGMAreasCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -131,9 +126,6 @@
 				C9FACA451A251C0C00E3089D /* AppDelegate.m */,
 				C9FACA4A1A251C0C00E3089D /* ViewController.h */,
 				C9FACA4B1A251C0C00E3089D /* ViewController.m */,
-				C9FACA811A2547DD00E3089D /* AGMAreasCell.h */,
-				C9FACA821A2547F000E3089D /* AGMAreasCell.m */,
-				C9FACA841A2547F700E3089D /* AGMAreasCell.xib */,
 				C9FACA6F1A25257000E3089D /* Location.h */,
 				C9FACA701A25257000E3089D /* Location.m */,
 				C9FACA6C1A25257000E3089D /* Bug.h */,
@@ -282,7 +274,6 @@
 			files = (
 				C9FACA7B1A25265100E3089D /* Icon_info.png in Resources */,
 				C9FACA791A25264700E3089D /* LocationsImage.png in Resources */,
-				C9FACA851A2547F700E3089D /* AGMAreasCell.xib in Resources */,
 				C9FACA4F1A251C0C00E3089D /* Main.storyboard in Resources */,
 				C9FACA541A251C0C00E3089D /* LaunchScreen.xib in Resources */,
 				C9FACA771A25263B00E3089D /* Hole_icon3.png in Resources */,
@@ -346,7 +337,6 @@
 				C9FACA461A251C0C00E3089D /* AppDelegate.m in Sources */,
 				C9FACA4C1A251C0C00E3089D /* ViewController.m in Sources */,
 				C9FACA431A251C0C00E3089D /* main.m in Sources */,
-				C9FACA831A2547F000E3089D /* AGMAreasCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

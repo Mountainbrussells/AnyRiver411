@@ -8,9 +8,9 @@
 
 #import <UIKit/UIKit.h>
 
-#import "<#header#>"
 
-@interface ViewController : UIViewController
+
+@interface ViewController : UIViewController 
 
 
 @end

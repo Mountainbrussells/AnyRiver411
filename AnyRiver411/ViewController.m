@@ -8,7 +8,22 @@
 
 #import "ViewController.h"
 
-@interface ViewController ()
+
+
+#import "Area.h"
+#import "Location.h"
+#import "Bug.h"
+
+#import "CoreData+MagicalRecord.h"
+
+
+
+
+@interface UIViewController ()
+
+@property (strong, nonatomic) IBOutlet UITableView *tableView;
+ @property (nonatomic, strong) NSMutableArray *dataArray;
+
 
 @end
 
@@ -16,12 +31,35 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
+    
+   
+    
+    
+
 }
 
+- (void)viewWillAppear:(BOOL)animated
+{
+    [super viewWillAppear:animated];
+    
+    self.dataArray = [NSMutableArray new];
+    
+    [self refreshData];
+}
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+
+#pragma mark - Refresh
+- (void) refreshData
+{
+    [self.dataArray removeAllObjects];
+    NSArray *allRecords = [Area MR_findAll];
+    [self.dataArray addObjectsFromArray:allRecords];
+    [self.tableView reloadData];
+    
+
 }
 
 @end
