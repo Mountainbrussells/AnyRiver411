@@ -14,6 +14,11 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>Pods-AnyRiver411-Reachability.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>Pods-AnyRiver411.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -22,17 +27,22 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>2CD844FDA3D4CD846B232D97</key>
+		<key>32560244DCB23092EB279809</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>6F7FB9D2DC6073042ED2F26E</key>
+		<key>7FC6BE848FE65D59FB41D852</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>F07C8992FA527916B89E690E</key>
+		<key>B1CB7DEF314B4DDAE896C381</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>E7CA0C5D951C5733643159FB</key>
 		<dict>
 			<key>primary</key>
 			<true/>
