@@ -10,7 +10,6 @@
 // import needed podfiles
 #import "CoreData/CoreData.h"
 #import "CoreData+MagicalRecord.h"
-#import "AFNetworking.h"
 #import "Reachability.h"
 
 // import core data models
@@ -31,8 +30,11 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     
+    NSLog(@"My app is starting");
+    
     [MagicalRecord setupAutoMigratingCoreDataStack];
-
+    
+    //NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
     
     if (![[NSUserDefaults standardUserDefaults] objectForKey:@"AGM_DataSetup"]) {
         
@@ -153,6 +155,14 @@
 
 - (void)saveContext {
     [MagicalRecord cleanUp];
+}
+
+#pragma mark - Applications Document Directory
+
+// Returns the URL to the application's Documents directory.
+- (NSURL *)applicationDocumentsDirectory
+{
+    return [[[NSFileManager defaultManager] URLsForDirectory:NSDocumentDirectory inDomains:NSUserDomainMask] lastObject];
 }
 
 @end

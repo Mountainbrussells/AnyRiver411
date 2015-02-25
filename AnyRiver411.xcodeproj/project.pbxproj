@@ -8,8 +8,11 @@
 
 /* Begin PBXBuildFile section */
 		C37FF40A22DE76D599093A3F /* libPods-AnyRiver411.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A20CFF3491AD8BEF03527D47 /* libPods-AnyRiver411.a */; };
+		C93950D91A9E3F2B004867CB /* BRCustomCellTwo.m in Sources */ = {isa = PBXBuildFile; fileRef = C93950D81A9E3F2B004867CB /* BRCustomCellTwo.m */; };
+		C95245F51A8BF79600C0FB99 /* static.json in Resources */ = {isa = PBXBuildFile; fileRef = C95245F41A8BF79600C0FB99 /* static.json */; };
+		C95245F81A8D263400C0FB99 /* BRLocationsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C95245F71A8D263400C0FB99 /* BRLocationsViewController.m */; };
 		C9C93CE61A795D6400AC9B35 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C9C93CE51A795D6400AC9B35 /* CoreData.framework */; };
-		C9C93CE91A796F0200AC9B35 /* AGMAreasViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C9C93CE81A796F0200AC9B35 /* AGMAreasViewController.m */; };
+		C9C93CEC1A79715E00AC9B35 /* BRAreasViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C9C93CEB1A79715E00AC9B35 /* BRAreasViewController.m */; };
 		C9CFC9CF1A2FCA2D0027231D /* BRCustomCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C9CFC9CE1A2FCA2D0027231D /* BRCustomCell.m */; };
 		C9FACA431A251C0C00E3089D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C9FACA421A251C0C00E3089D /* main.m */; };
 		C9FACA461A251C0C00E3089D /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C9FACA451A251C0C00E3089D /* AppDelegate.m */; };
@@ -43,9 +46,14 @@
 		2C7A41D7E3D60E6FD328F6DF /* Pods-AnyRiver411.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AnyRiver411.debug.xcconfig"; path = "Pods/Target Support Files/Pods-AnyRiver411/Pods-AnyRiver411.debug.xcconfig"; sourceTree = "<group>"; };
 		A20CFF3491AD8BEF03527D47 /* libPods-AnyRiver411.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-AnyRiver411.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C8D5E4E40D7B212E252BAA48 /* Pods-AnyRiver411.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AnyRiver411.release.xcconfig"; path = "Pods/Target Support Files/Pods-AnyRiver411/Pods-AnyRiver411.release.xcconfig"; sourceTree = "<group>"; };
+		C93950D71A9E3F2B004867CB /* BRCustomCellTwo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BRCustomCellTwo.h; sourceTree = "<group>"; };
+		C93950D81A9E3F2B004867CB /* BRCustomCellTwo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BRCustomCellTwo.m; sourceTree = "<group>"; };
+		C95245F41A8BF79600C0FB99 /* static.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = static.json; sourceTree = "<group>"; };
+		C95245F61A8D263400C0FB99 /* BRLocationsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BRLocationsViewController.h; sourceTree = "<group>"; };
+		C95245F71A8D263400C0FB99 /* BRLocationsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BRLocationsViewController.m; sourceTree = "<group>"; };
 		C9C93CE51A795D6400AC9B35 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
-		C9C93CE71A796EF600AC9B35 /* AGMAreasViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AGMAreasViewController.h; sourceTree = "<group>"; };
-		C9C93CE81A796F0200AC9B35 /* AGMAreasViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AGMAreasViewController.m; sourceTree = "<group>"; };
+		C9C93CEA1A79715E00AC9B35 /* BRAreasViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BRAreasViewController.h; sourceTree = "<group>"; };
+		C9C93CEB1A79715E00AC9B35 /* BRAreasViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BRAreasViewController.m; sourceTree = "<group>"; };
 		C9CFC9CD1A2FCA2D0027231D /* BRCustomCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BRCustomCell.h; sourceTree = "<group>"; };
 		C9CFC9CE1A2FCA2D0027231D /* BRCustomCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BRCustomCell.m; sourceTree = "<group>"; };
 		C9FACA3D1A251C0C00E3089D /* AnyRiver411.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AnyRiver411.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -124,12 +132,16 @@
 		C9CFC9BA1A2FC3FE0027231D /* View Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				C9C93CE71A796EF600AC9B35 /* AGMAreasViewController.h */,
-				C9C93CE81A796F0200AC9B35 /* AGMAreasViewController.m */,
 				C9FACA4A1A251C0C00E3089D /* ViewController.h */,
 				C9FACA4B1A251C0C00E3089D /* ViewController.m */,
 				C9CFC9CD1A2FCA2D0027231D /* BRCustomCell.h */,
 				C9CFC9CE1A2FCA2D0027231D /* BRCustomCell.m */,
+				C93950D71A9E3F2B004867CB /* BRCustomCellTwo.h */,
+				C93950D81A9E3F2B004867CB /* BRCustomCellTwo.m */,
+				C9C93CEA1A79715E00AC9B35 /* BRAreasViewController.h */,
+				C9C93CEB1A79715E00AC9B35 /* BRAreasViewController.m */,
+				C95245F61A8D263400C0FB99 /* BRLocationsViewController.h */,
+				C95245F71A8D263400C0FB99 /* BRLocationsViewController.m */,
 			);
 			name = "View Controllers";
 			sourceTree = "<group>";
@@ -172,6 +184,7 @@
 		C9FACA401A251C0C00E3089D /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				C95245F41A8BF79600C0FB99 /* static.json */,
 				C9FACA7E1A252E9A00E3089D /* Reachability.h */,
 				C9FACA731A25260300E3089D /* images */,
 				C9FACA411A251C0C00E3089D /* Info.plist */,
@@ -302,6 +315,7 @@
 				C9FACA7B1A25265100E3089D /* Icon_info.png in Resources */,
 				C9FACA791A25264700E3089D /* LocationsImage.png in Resources */,
 				C9FACA4F1A251C0C00E3089D /* Main.storyboard in Resources */,
+				C95245F51A8BF79600C0FB99 /* static.json in Resources */,
 				C9FACA541A251C0C00E3089D /* LaunchScreen.xib in Resources */,
 				C9FACA771A25263B00E3089D /* Hole_icon3.png in Resources */,
 				C9FACA751A25262700E3089D /* LighterFishnet_scalechange.png in Resources */,
@@ -356,6 +370,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C93950D91A9E3F2B004867CB /* BRCustomCellTwo.m in Sources */,
 				C9FACA6E1A25257000E3089D /* Bug.m in Sources */,
 				C9FACA711A25257000E3089D /* Location.m in Sources */,
 				C9FACA6B1A25257000E3089D /* Area.m in Sources */,
@@ -363,8 +378,9 @@
 				C9CFC9CF1A2FCA2D0027231D /* BRCustomCell.m in Sources */,
 				C9FACA461A251C0C00E3089D /* AppDelegate.m in Sources */,
 				C9FACA4C1A251C0C00E3089D /* ViewController.m in Sources */,
+				C9C93CEC1A79715E00AC9B35 /* BRAreasViewController.m in Sources */,
 				C9FACA431A251C0C00E3089D /* main.m in Sources */,
-				C9C93CE91A796F0200AC9B35 /* AGMAreasViewController.m in Sources */,
+				C95245F81A8D263400C0FB99 /* BRLocationsViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

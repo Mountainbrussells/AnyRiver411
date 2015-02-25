@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<model userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="6252" systemVersion="14B25" minimumToolsVersion="Automatic" macOSVersion="Automatic" iOSVersion="Automatic">
+<model userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="6254" systemVersion="14C109" minimumToolsVersion="Automatic" macOSVersion="Automatic" iOSVersion="Automatic">
     <entity name="Area" representedClassName="Area" syncable="YES">
         <attribute name="bulletDescription" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="uid" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
-        <relationship name="location" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Location" inverseName="area" inverseEntity="Location" syncable="YES"/>
+        <relationship name="location" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Location" inverseName="area" inverseEntity="Location" syncable="YES"/>
     </entity>
     <entity name="Bug" representedClassName="Bug" syncable="YES">
         <attribute name="fall" optional="YES" attributeType="String" syncable="YES"/>
@@ -21,7 +21,7 @@
         <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="uid" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
         <relationship name="area" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Area" inverseName="location" inverseEntity="Area" syncable="YES"/>
-        <relationship name="bugs" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Bug" inverseName="location" inverseEntity="Bug" syncable="YES"/>
+        <relationship name="bugs" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Bug" inverseName="location" inverseEntity="Bug" syncable="YES"/>
     </entity>
     <elements>
         <element name="Area" positionX="-315" positionY="-364" width="128" height="103"/>
