@@ -38,6 +38,10 @@
     [super viewWillAppear:animated];
     _dataArray = [NSMutableArray new];
     
+    UINavigationItem *navItem = self.navigationItem;
+    navItem.title = @"Anglers411";
+    
+    
     [self refreshData];
 }
 

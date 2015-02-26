@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		C37FF40A22DE76D599093A3F /* libPods-AnyRiver411.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A20CFF3491AD8BEF03527D47 /* libPods-AnyRiver411.a */; };
 		C93950D91A9E3F2B004867CB /* BRCustomCellTwo.m in Sources */ = {isa = PBXBuildFile; fileRef = C93950D81A9E3F2B004867CB /* BRCustomCellTwo.m */; };
+		C93950DC1A9E47B1004867CB /* BRDetailsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C93950DB1A9E47B1004867CB /* BRDetailsViewController.m */; };
+		C93950DF1A9FC547004867CB /* BRDescriptionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C93950DE1A9FC547004867CB /* BRDescriptionViewController.m */; };
 		C95245F51A8BF79600C0FB99 /* static.json in Resources */ = {isa = PBXBuildFile; fileRef = C95245F41A8BF79600C0FB99 /* static.json */; };
 		C95245F81A8D263400C0FB99 /* BRLocationsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C95245F71A8D263400C0FB99 /* BRLocationsViewController.m */; };
 		C9C93CE61A795D6400AC9B35 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C9C93CE51A795D6400AC9B35 /* CoreData.framework */; };
@@ -48,6 +50,10 @@
 		C8D5E4E40D7B212E252BAA48 /* Pods-AnyRiver411.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AnyRiver411.release.xcconfig"; path = "Pods/Target Support Files/Pods-AnyRiver411/Pods-AnyRiver411.release.xcconfig"; sourceTree = "<group>"; };
 		C93950D71A9E3F2B004867CB /* BRCustomCellTwo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BRCustomCellTwo.h; sourceTree = "<group>"; };
 		C93950D81A9E3F2B004867CB /* BRCustomCellTwo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BRCustomCellTwo.m; sourceTree = "<group>"; };
+		C93950DA1A9E47B1004867CB /* BRDetailsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BRDetailsViewController.h; sourceTree = "<group>"; };
+		C93950DB1A9E47B1004867CB /* BRDetailsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BRDetailsViewController.m; sourceTree = "<group>"; };
+		C93950DD1A9FC547004867CB /* BRDescriptionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BRDescriptionViewController.h; sourceTree = "<group>"; };
+		C93950DE1A9FC547004867CB /* BRDescriptionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BRDescriptionViewController.m; sourceTree = "<group>"; };
 		C95245F41A8BF79600C0FB99 /* static.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = static.json; sourceTree = "<group>"; };
 		C95245F61A8D263400C0FB99 /* BRLocationsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BRLocationsViewController.h; sourceTree = "<group>"; };
 		C95245F71A8D263400C0FB99 /* BRLocationsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BRLocationsViewController.m; sourceTree = "<group>"; };
@@ -142,6 +148,10 @@
 				C9C93CEB1A79715E00AC9B35 /* BRAreasViewController.m */,
 				C95245F61A8D263400C0FB99 /* BRLocationsViewController.h */,
 				C95245F71A8D263400C0FB99 /* BRLocationsViewController.m */,
+				C93950DA1A9E47B1004867CB /* BRDetailsViewController.h */,
+				C93950DB1A9E47B1004867CB /* BRDetailsViewController.m */,
+				C93950DD1A9FC547004867CB /* BRDescriptionViewController.h */,
+				C93950DE1A9FC547004867CB /* BRDescriptionViewController.m */,
 			);
 			name = "View Controllers";
 			sourceTree = "<group>";
@@ -375,6 +385,8 @@
 				C9FACA711A25257000E3089D /* Location.m in Sources */,
 				C9FACA6B1A25257000E3089D /* Area.m in Sources */,
 				C9FACA491A251C0C00E3089D /* AnyRiver411.xcdatamodeld in Sources */,
+				C93950DC1A9E47B1004867CB /* BRDetailsViewController.m in Sources */,
+				C93950DF1A9FC547004867CB /* BRDescriptionViewController.m in Sources */,
 				C9CFC9CF1A2FCA2D0027231D /* BRCustomCell.m in Sources */,
 				C9FACA461A251C0C00E3089D /* AppDelegate.m in Sources */,
 				C9FACA4C1A251C0C00E3089D /* ViewController.m in Sources */,

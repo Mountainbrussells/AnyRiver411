@@ -10,4 +10,8 @@
 
 @interface BRCustomCellTwo : UITableViewCell
 
+@property (weak, nonatomic) IBOutlet UILabel *nameLabel;
+@property (weak, nonatomic) IBOutlet UILabel *bulletDescription;
+@property (weak, nonatomic) IBOutlet UIImageView *areaIconView;
+
 @end

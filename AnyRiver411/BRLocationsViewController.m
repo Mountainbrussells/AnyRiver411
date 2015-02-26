@@ -7,9 +7,10 @@
 //
 
 #import "BRLocationsViewController.h"
-#import "BRCustomCell.h"
+#import "BRCustomCellTwo.h"
 #import "Area.h"
 #import "CoreData+MagicalRecord.h"
+#import "BRDetailsViewController.h"
 
 @interface BRLocationsViewController ()
 {
@@ -35,6 +36,12 @@
     _dataArray = [NSMutableArray new];
     
     [self refreshData];
+    
+    UINavigationItem *navItem = self.navigationItem;
+    navItem.title = self.area.name;
+    
+    
+    
 }
 
 - (void)didReceiveMemoryWarning {
@@ -72,7 +79,7 @@
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
     
-    BRCustomCell *cell = (BRCustomCell *)[tableView dequeueReusableCellWithIdentifier: @"customCellIdentifier"];
+    BRCustomCellTwo *cell = (BRCustomCellTwo *)[tableView dequeueReusableCellWithIdentifier: @"customCellIdentifier"];
     cell.backgroundColor = [UIColor clearColor];
     
     Location *location = [_dataArray objectAtIndex:indexPath.row];
@@ -87,6 +94,16 @@
     return cell;
 }
 
+# pragma mark - segue preperations
+
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
+{
+    if ([segue.identifier isEqualToString:@"showLocations"]) {
+        NSIndexPath *indexPath = [self.locationTable indexPathForSelectedRow];
+        BRDetailsViewController *detailsView = segue.destinationViewController;
+        detailsView.location = [_dataArray objectAtIndex:indexPath.row];
+    }
+}
 
 
 /*
