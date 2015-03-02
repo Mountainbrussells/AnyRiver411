@@ -124,7 +124,7 @@
                                             <outlet property="areaIconView" destination="9cV-cB-oO1" id="vGJ-gS-Xt2"/>
                                             <outlet property="bulletDescription" destination="bnp-id-oq3" id="yDS-mj-TPM"/>
                                             <outlet property="nameLabel" destination="U9R-AA-0tN" id="eX5-p1-3ke"/>
-                                            <segue destination="7dG-8w-AVq" kind="push" identifier="snowDetails" id="LjC-zp-riY"/>
+                                            <segue destination="7dG-8w-AVq" kind="push" identifier="showDetails" id="LjC-zp-riY"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
@@ -208,6 +208,9 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Description" id="IiS-rO-O56"/>
+                    <connections>
+                        <outlet property="descriptionText" destination="RUk-TG-NYL" id="mRH-eF-ZEf"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="A2v-f4-uGx" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

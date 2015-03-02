@@ -10,6 +10,9 @@
 
 @interface BRDescriptionViewController ()
 
+@property (weak, nonatomic) IBOutlet UITextView *descriptionText;
+
+
 @end
 
 @implementation BRDescriptionViewController
@@ -22,6 +25,14 @@
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+
+- (void)viewWillAppear:(BOOL)animated
+{
+    // For some reason this has to happen here.
+    NSLog(@"this is also my location %@", self.location.name);
+    self.descriptionText.text = self.location.desc;
+    self.descriptionText.backgroundColor = [UIColor clearColor];
 }
 
 /*

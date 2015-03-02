@@ -7,6 +7,8 @@
 //
 
 #import "BRDetailsViewController.h"
+#import "BRDescriptionViewController.h"
+
 
 @interface BRDetailsViewController ()
 
@@ -16,14 +18,37 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
+    UITabBarController *tabBarController = self.tabBarController;
+    
 }
 
 -(void)viewWillAppear:(BOOL)animated
 {
     UINavigationItem *navItem = self.navigationItem;
     navItem.title = self.location.name;
+    NSLog(@"The Details View Controllers Location is %@", self.location.name);
+    BRDescriptionViewController *dvc = [self.tabBarController.viewControllers objectAtIndex:0];
+    dvc.location = self.location;
+    
+    
+    
+    
+    
 }
+
+
+
+//-(void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
+//{
+//    if ([[segue identifier] isEqualToString:@"tab"])
+//    {
+//        UITabBarController *tabbar = segue.destinationViewController;
+//        BRDescriptionViewController *descView = [tabbar.viewControllers objectAtIndex:0];
+//        NSLog(@"this is my location %@, before segue ", self.location.name);
+//        descView.location = self.location;
+//        
+//    }
+//}
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];

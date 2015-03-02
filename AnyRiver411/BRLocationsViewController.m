@@ -98,7 +98,7 @@
 
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
 {
-    if ([segue.identifier isEqualToString:@"showLocations"]) {
+    if ([segue.identifier isEqualToString:@"showDetails"]) {
         NSIndexPath *indexPath = [self.locationTable indexPathForSelectedRow];
         BRDetailsViewController *detailsView = segue.destinationViewController;
         detailsView.location = [_dataArray objectAtIndex:indexPath.row];
