@@ -7,6 +7,7 @@
 //
 
 #import "BRDetailsViewController.h"
+#import "BRDirectionsViewController.h"
 #import "BRDescriptionViewController.h"
 
 
@@ -27,10 +28,12 @@
     UINavigationItem *navItem = self.navigationItem;
     navItem.title = self.location.name;
     NSLog(@"The Details View Controllers Location is %@", self.location.name);
-    BRDescriptionViewController *dvc = [self.tabBarController.viewControllers objectAtIndex:0];
+    BRDescriptionViewController *dvc = [[self viewControllers] objectAtIndex:0];
     dvc.location = self.location;
+    NSLog(@"The Description  View Controllers Location is %@", dvc.location.name);
     
-    
+    BRDirectionsViewController *dirvc = [[self viewControllers] objectAtIndex:1];
+    dirvc.location = self.location;
     
     
     
