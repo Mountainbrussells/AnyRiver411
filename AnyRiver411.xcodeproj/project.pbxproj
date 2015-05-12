@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		C37FF40A22DE76D599093A3F /* libPods-AnyRiver411.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A20CFF3491AD8BEF03527D47 /* libPods-AnyRiver411.a */; };
+		C92A48321B0284D000290BDC /* BRBugViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C92A48311B0284D000290BDC /* BRBugViewController.m */; };
 		C93950D91A9E3F2B004867CB /* BRCustomCellTwo.m in Sources */ = {isa = PBXBuildFile; fileRef = C93950D81A9E3F2B004867CB /* BRCustomCellTwo.m */; };
 		C93950DC1A9E47B1004867CB /* BRDetailsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C93950DB1A9E47B1004867CB /* BRDetailsViewController.m */; };
 		C93950DF1A9FC547004867CB /* BRDescriptionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C93950DE1A9FC547004867CB /* BRDescriptionViewController.m */; };
@@ -49,6 +50,8 @@
 		2C7A41D7E3D60E6FD328F6DF /* Pods-AnyRiver411.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AnyRiver411.debug.xcconfig"; path = "Pods/Target Support Files/Pods-AnyRiver411/Pods-AnyRiver411.debug.xcconfig"; sourceTree = "<group>"; };
 		A20CFF3491AD8BEF03527D47 /* libPods-AnyRiver411.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-AnyRiver411.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C8D5E4E40D7B212E252BAA48 /* Pods-AnyRiver411.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AnyRiver411.release.xcconfig"; path = "Pods/Target Support Files/Pods-AnyRiver411/Pods-AnyRiver411.release.xcconfig"; sourceTree = "<group>"; };
+		C92A48301B0284D000290BDC /* BRBugViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BRBugViewController.h; sourceTree = "<group>"; };
+		C92A48311B0284D000290BDC /* BRBugViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BRBugViewController.m; sourceTree = "<group>"; };
 		C93950D71A9E3F2B004867CB /* BRCustomCellTwo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BRCustomCellTwo.h; sourceTree = "<group>"; };
 		C93950D81A9E3F2B004867CB /* BRCustomCellTwo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BRCustomCellTwo.m; sourceTree = "<group>"; };
 		C93950DA1A9E47B1004867CB /* BRDetailsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BRDetailsViewController.h; sourceTree = "<group>"; };
@@ -157,6 +160,8 @@
 				C93950DE1A9FC547004867CB /* BRDescriptionViewController.m */,
 				C93950E01AA51077004867CB /* BRDirectionsViewController.h */,
 				C93950E11AA51077004867CB /* BRDirectionsViewController.m */,
+				C92A48301B0284D000290BDC /* BRBugViewController.h */,
+				C92A48311B0284D000290BDC /* BRBugViewController.m */,
 			);
 			name = "View Controllers";
 			sourceTree = "<group>";
@@ -392,6 +397,7 @@
 				C9FACA6B1A25257000E3089D /* Area.m in Sources */,
 				C9FACA491A251C0C00E3089D /* AnyRiver411.xcdatamodeld in Sources */,
 				C93950DC1A9E47B1004867CB /* BRDetailsViewController.m in Sources */,
+				C92A48321B0284D000290BDC /* BRBugViewController.m in Sources */,
 				C93950DF1A9FC547004867CB /* BRDescriptionViewController.m in Sources */,
 				C9CFC9CF1A2FCA2D0027231D /* BRCustomCell.m in Sources */,
 				C9FACA461A251C0C00E3089D /* AppDelegate.m in Sources */,

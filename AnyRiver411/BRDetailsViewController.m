@@ -9,6 +9,7 @@
 #import "BRDetailsViewController.h"
 #import "BRDirectionsViewController.h"
 #import "BRDescriptionViewController.h"
+#import "BRBugViewController.h"
 
 
 @interface BRDetailsViewController ()
@@ -34,6 +35,9 @@
     
     BRDirectionsViewController *dirvc = [[self viewControllers] objectAtIndex:1];
     dirvc.location = self.location;
+    
+    BRBugViewController *bvc = [[self viewControllers] objectAtIndex:2];
+    bvc.location = self.location;
     
     
     
