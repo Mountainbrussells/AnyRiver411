@@ -10,17 +10,18 @@
 #import "CoreData+MagicalRecord.h"
 #import "Bug.h"
 
-@interface BRBugViewController ()
+@interface BRBugViewController () <UITableViewDataSource, UITableViewDelegate>
 {
     NSMutableArray *_dataArray;
 }
 @property (weak, nonatomic) IBOutlet UILabel *dateLabel;
 
-@property (weak, nonatomic) IBOutlet UITableView *bugTable;
+
 
 @end
 
 @implementation BRBugViewController
+@synthesize bugTable;
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -37,7 +38,14 @@
     // Use filtered NSDate object to set dateLabel contents
     self.dateLabel.text = [dateFormatter stringFromDate:now];
     
+    bugTable.delegate = self;
+    bugTable.dataSource = self;
     
+//    UITableView *bugList = [[UITableView alloc] init];
+//    self.bugTable = bugList;
+//    
+//    [self.bugTable registerClass:[UITableViewCell class]
+//         forCellReuseIdentifier:@"UITableViewCell"];
     
     
     
@@ -154,6 +162,26 @@
     }
     
     
+}
+
+- (NSInteger) numberOfSectionsInTableView:(UITableView *)tableView
+{
+    return 1;
+}
+
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
+{
+    return _dataArray.count;
+    NSLog(@"The table view will have %i sections", _dataArray.count);
+}
+
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    UITableViewCell *cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:@"UITableViewCell"];
+    Bug *bug = [_dataArray objectAtIndex:indexPath.row];
+    cell.textLabel.text = bug.name;
+    
+    return cell;
 }
 
 - (void)didReceiveMemoryWarning {

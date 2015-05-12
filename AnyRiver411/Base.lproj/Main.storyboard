@@ -211,7 +211,7 @@
                     </view>
                     <tabBarItem key="tabBarItem" title="Bugs" id="NPY-8c-2zg"/>
                     <connections>
-                        <outlet property="bugTable" destination="K34-3e-7TM" id="SbY-D9-ywr"/>
+                        <outlet property="bugTable" destination="K34-3e-7TM" id="yWT-co-0bf"/>
                         <outlet property="dateLabel" destination="uXM-Ax-V8Z" id="Xei-nb-441"/>
                     </connections>
                 </viewController>
