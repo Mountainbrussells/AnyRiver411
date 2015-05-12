@@ -24,7 +24,22 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
- 
+    NSDate *now = [NSDate date];
+    
+    // You need an NSDateFormatter that will turn a date into a simple string
+    static NSDateFormatter *dateFormatter = nil;
+    if (!dateFormatter){
+        dateFormatter = [[NSDateFormatter alloc] init];
+        dateFormatter.dateStyle = NSDateFormatterLongStyle;
+        //dateFormatter.timeStyle = NSDateFormatterShortStyle;
+    }
+    
+    // Use filtered NSDate object to set dateLabel contents
+    self.dateLabel.text = [dateFormatter stringFromDate:now];
+    
+    
+    
+    
     
 }
 

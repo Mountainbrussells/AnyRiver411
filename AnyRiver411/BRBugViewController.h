@@ -9,8 +9,7 @@
 #import <UIKit/UIKit.h>
 #import "Location.h"
 
-@interface BRBugViewController : UIViewController
-
+@interface BRBugViewController : UIViewController <UITableViewDataSource, UITableViewDelegate>
 @property (nonatomic, strong) Location *location;
 
 @end
